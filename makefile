@@ -4,4 +4,4 @@ README.md: guessinggame.sh
 	date >> README.md
 	echo "" >> README.md
 	echo "The guessing game contains the following number of lines: " >> README.md
-	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
+	cat guessinggame.sh | wc -l >> README.md
