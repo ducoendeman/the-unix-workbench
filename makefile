@@ -1,6 +1,7 @@
-readme.md: guessinggame.sh
-	echo "# Guessing game of the number of files in current folder" > readme.md
-	echo "Make was run on: " >> readme.md
-	date >> readme.md
-	echo "The guessing game contains the following number of lines: " >> readme.md
-	wc -l guessinggame.sh | egrep -o "[0-9]+" >> readme.md
+README.md: guessinggame.sh
+	echo "# Guessing game of the number of files in current folder" > README.md
+	echo "Make was run on: " >> README.md
+	date >> README.md
+	echo "" >> README.md
+	echo "The guessing game contains the following number of lines: " >> README.md
+	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
